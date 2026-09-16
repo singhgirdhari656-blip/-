@@ -1,0 +1,270 @@
+index.html<!DOCTYPE html><html lang="hi">
+<head>
+    <meta charset="UTF-8">
+<meta name="google-site-verification" content="4O_g0NndTeyrjeJ4NGY4n-xuNR_3AJR4w7PcVeWZhvA" />    <title>श्री श्याम बिल्डिंग मैटेरियल सप्लायर्स</title><style>
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin: 0;
+        padding: 20px;
+        background: #f2f2f2;
+    }
+
+    .hero, .box {
+        background: white;
+        padding: 20px;
+        margin: 15px 0;
+        border-radius: 15px;
+    }
+
+    .hero h1 {
+        margin-top: 0;
+    }
+
+    .material {
+        background: #f2f2f2;
+        padding: 12px;
+        margin: 10px 0;
+        border-radius: 10px;
+    }
+
+    button {
+        padding: 14px 22px;
+        margin: 8px;
+        font-size: 17px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    input, select {
+        width: 90%;
+        padding: 12px;
+        margin: 8px;
+        font-size: 16px;
+        border-radius: 8px;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+    }
+
+    form button {
+        width: 90%;
+        margin-top: 10px;
+    }
+</style>
+
+</head><body><div class="hero">
+    <h1>श्री श्याम बिल्डिंग मैटेरियल सप्लायर्स</h1>
+    <p>🏗️ निर्माण सामग्री की विश्वसनीय सप्लाई</p>
+    <p>बजरी • रोड़ी • रेत</p>
+</div>
+
+<div class="box">
+    <h2>हमारे मैटेरियल</h2>
+
+    <div class="material">
+        <h3>🪨 बजरी</h3>
+        <p>अच्छी क्वालिटी की बजरी उपलब्ध</p>
+    </div>
+
+    <div class="material">
+        <h3>🪨 रोड़ी</h3>
+        <p>निर्माण कार्य के लिए रोड़ी उपलब्ध</p>
+    </div>
+
+    <div class="material">
+        <h3>🏖️ रेत</h3>
+        <p>निर्माण कार्य के लिए रेत उपलब्ध</p>
+    </div>
+</div>
+
+<div class="box">
+    <h2>🚚 जयपुर में सप्लाई</h2>
+    <p>हम जयपुर और आसपास के क्षेत्रों में बिल्डिंग मैटेरियल की सप्लाई करते हैं।</p>
+    <p>📍 Jaipur और आसपास के क्षेत्र</p>
+    <p>🚛 जरूरत के अनुसार डिलीवरी</p>
+</div>
+
+<div class="box">
+    <h2>⭐ हमसे क्यों खरीदें?</h2>
+
+    <div class="material">
+        <h3>🚚 जयपुर में सप्लाई</h3>
+        <p>जयपुर और आसपास के क्षेत्रों में मैटेरियल सप्लाई।</p>
+    </div>
+
+    <div class="material">
+        <h3>🏗️ अलग-अलग मैटेरियल</h3>
+        <p>बजरी, रोड़ी और रेत उपलब्ध।</p>
+    </div>
+
+    <div class="material">
+        <h3>📞 आसान संपर्क</h3>
+        <p>ऑर्डर और रेट की जानकारी के लिए सीधे संपर्क करें।</p>
+    </div>
+</div>
+
+<div class="box">
+    <h2>📋 ऑर्डर की जानकारी</h2>
+
+    <form onsubmit="sendOrder(); return false;">
+
+        <input type="text" id="name" placeholder="आपका नाम" required>
+
+        <input type="tel" id="phone" placeholder="मोबाइल नंबर" required>
+
+        <select id="material" required>
+            <option value="">मैटेरियल चुनें</option>
+            <option value="बजरी">बजरी</option>
+            <option value="रोड़ी">रोड़ी</option>
+            <option value="रेत">रेत</option>
+        </select>
+
+        <input type="text" id="quantity" placeholder="कितनी मात्रा चाहिए?">
+
+        <button type="submit">📲 WhatsApp पर ऑर्डर भेजें</button>
+
+    </form>
+</div>
+
+<div class="box">
+    <h2>📞 संपर्क करें</h2>
+
+    <a href="tel:7976747614">
+        <button>📞 Call Now</button>
+    </a>
+
+    <a href="https://wa.me/917976747614">
+        <button>💬 WhatsApp</button>
+    </a>
+
+    <br>
+
+    <a href="https://wa.me/917976747614">
+        <button>🚚 अभी ऑर्डर करें</button>
+    </a>
+</div>
+
+<script>
+    function sendOrder() {
+
+        let name = document.getElementById("name").value;
+        let phone = document.getElementById("phone").value;
+        let material = document.getElementById("material").value;
+        let quantity = document.getElementById("quantity").value;
+
+        let message =
+            "नमस्ते, मुझे बिल्डिंग मैटेरियल चाहिए.%0A" +
+            "नाम: " + encodeURIComponent(name) + "%0A" +
+            "मोबाइल: " + encodeURIComponent(phone) + "%0A" +
+            "मैटेरियल: " + encodeURIComponent(material) + "%0A" +
+            "मात्रा: " + encodeURIComponent(quantity);
+
+        window.location.href =
+            "https://wa.me/917976747614?text=" + message;
+    }
+</script>
+<div class="box">
+    <h2>🤖 श्री श्याम सहायक</h2>
+
+    <p>कोई सवाल पूछो — जैसे “डिलीवरी करते हो?”</p>
+
+    <input type="text" id="userQuestion" placeholder="अपना सवाल लिखें">
+
+    <button onclick="askBot()">💬 पूछें</button>
+
+    <p id="botAnswer"></p>
+</div>
+
+<script>
+function askBot() {
+
+    let question = document.getElementById("userQuestion").value.toLowerCase();
+    let answer = "";
+
+    if (question.includes("रेट") || question.includes("भाव") || question.includes("price")) {
+        answer = "रेट मैटेरियल और मात्रा के हिसाब से बदल सकता है। सही रेट के लिए WhatsApp पर संपर्क करें।";
+    }
+
+    else if (question.includes("डिलीवरी") || question.includes("delivery")) {
+        answer = "हाँ, जयपुर और आसपास के क्षेत्रों में जरूरत के अनुसार डिलीवरी की सुविधा है।";
+    }
+
+    else if (question.includes("बजरी")) {
+        answer = "बजरी उपलब्ध है। मात्रा और रेट जानने के लिए WhatsApp पर संपर्क करें।";
+    }
+
+    else if (question.includes("रोड़ी") || question.includes("rodi")) {
+        answer = "रोड़ी उपलब्ध है। ऑर्डर के लिए WhatsApp पर संपर्क करें।";
+    }
+
+    else if (question.includes("रेत") || question.includes("sand")) {
+        answer = "रेत उपलब्ध है। रेट और डिलीवरी की जानकारी के लिए संपर्क करें।";
+    }
+
+    else if (question.includes("जयपुर") || question.includes("jaipur")) {
+        answer = "हम जयपुर और आसपास के क्षेत्रों में बिल्डिंग मैटेरियल सप्लाई करते हैं।";
+    }
+
+    else if (question.includes("ऑर्डर") || question.includes("order")) {
+        answer = "ऊपर दिए गए ऑर्डर फॉर्म से जानकारी भरकर WhatsApp पर ऑर्डर भेज सकते हो।";
+    }
+
+    else if (question.includes("नमस्ते") || question.includes("hello") || question.includes("hi")) {
+        answer = "नमस्ते! 😊 श्री श्याम बिल्डिंग मैटेरियल सप्लायर्स में आपका स्वागत है।";
+    }
+
+    else {
+        answer = "इस सवाल की जानकारी मेरे पास अभी नहीं है। सही जानकारी के लिए WhatsApp पर संपर्क करें।";
+    }
+
+    document.getElementById("botAnswer").innerText = answer;
+}
+</script>if (question.includes("रेट") || question.includes("भाव") || question.includes("price")) {
+</bo<div class="box">
+    <h2>💰 आज के रेट</h2>
+
+    <><p>🪨 बजरी: <span id="bajriRate">WhatsApp पर आज का रेट पूछें</span></p>
+
+<p>🪨 रोड़ी: <span id="rodiRate">WhatsApp पर आज का रेट पूछें</span></p>
+
+<p>🏖️ रेत: <span id="retRate">रेट उपलब्ध नहीं</span></p>
+  
+
+
+    <a href="https://wa.me/917976747614">
+        <button>💬 आज का रेट पूछें</button>
+    </a>
+</div><script>
+    document.getElementById("bajriRate").innerText = "रेट WhatsApp पर पूछें";
+    document.getElementById("rodiRate").innerText = "रेट WhatsApp पर पूछें";
+    document.getElementById("retRate").innerText = "रेट WhatsApp पर पूछें";
+</script>
+<<a href="https://wa.me/917976747614" class="whatsapp-float">
+    💬
+</a>
+
+<style>
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 32px;
+    line-height: 60px;
+    text-decoration: none;
+    z-index: 9999;
+}
+</style>/html><div class="box">
+    <h2>📍 हमारी लोकेशन</h2>
+    <p>जयपुर और आसपास के क्षेत्रों में बिल्डिंग मैटेरियल सप्लाई।</p>
+
+    <a href="https://www.google.com/maps/search/?api=1&query=Jaipur,Rajasthan" target="_blank">
+        <button>📍 Google Maps पर देखें</button>
+    </a>
+</div
