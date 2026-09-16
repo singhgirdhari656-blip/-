@@ -165,6 +165,80 @@ index.html<!DOCTYPE html><html lang="hi">
             "https://wa.me/917976747614?text=" + message;
     }
 </script>
+<div class="box">
+    <h2>🤖 श्री श्याम सहायक</h2>
 
-</body>
+    <p>कोई सवाल पूछो — जैसे “डिलीवरी करते हो?”</p>
+
+    <input type="text" id="userQuestion" placeholder="अपना सवाल लिखें">
+
+    <button onclick="askBot()">💬 पूछें</button>
+
+    <p id="botAnswer"></p>
+</div>
+
+<script>
+function askBot() {
+
+    let question = document.getElementById("userQuestion").value.toLowerCase();
+    let answer = "";
+
+    if (question.includes("रेट") || question.includes("भाव") || question.includes("price")) {
+        answer = "रेट मैटेरियल और मात्रा के हिसाब से बदल सकता है। सही रेट के लिए WhatsApp पर संपर्क करें।";
+    }
+
+    else if (question.includes("डिलीवरी") || question.includes("delivery")) {
+        answer = "हाँ, जयपुर और आसपास के क्षेत्रों में जरूरत के अनुसार डिलीवरी की सुविधा है।";
+    }
+
+    else if (question.includes("बजरी")) {
+        answer = "बजरी उपलब्ध है। मात्रा और रेट जानने के लिए WhatsApp पर संपर्क करें।";
+    }
+
+    else if (question.includes("रोड़ी") || question.includes("rodi")) {
+        answer = "रोड़ी उपलब्ध है। ऑर्डर के लिए WhatsApp पर संपर्क करें।";
+    }
+
+    else if (question.includes("रेत") || question.includes("sand")) {
+        answer = "रेत उपलब्ध है। रेट और डिलीवरी की जानकारी के लिए संपर्क करें।";
+    }
+
+    else if (question.includes("जयपुर") || question.includes("jaipur")) {
+        answer = "हम जयपुर और आसपास के क्षेत्रों में बिल्डिंग मैटेरियल सप्लाई करते हैं।";
+    }
+
+    else if (question.includes("ऑर्डर") || question.includes("order")) {
+        answer = "ऊपर दिए गए ऑर्डर फॉर्म से जानकारी भरकर WhatsApp पर ऑर्डर भेज सकते हो।";
+    }
+
+    else if (question.includes("नमस्ते") || question.includes("hello") || question.includes("hi")) {
+        answer = "नमस्ते! 😊 श्री श्याम बिल्डिंग मैटेरियल सप्लायर्स में आपका स्वागत है।";
+    }
+
+    else {
+        answer = "इस सवाल की जानकारी मेरे पास अभी नहीं है। सही जानकारी के लिए WhatsApp पर संपर्क करें।";
+    }
+
+    document.getElementById("botAnswer").innerText = answer;
+}
+</script>if (question.includes("रेट") || question.includes("भाव") || question.includes("price")) {
+</bo<div class="box">
+    <h2>💰 आज के रेट</h2>
+
+    <><p>🪨 बजरी: <span id="bajriRate">WhatsApp पर आज का रेट पूछें</span></p>
+
+<p>🪨 रोड़ी: <span id="rodiRate">WhatsApp पर आज का रेट पूछें</span></p>
+
+<p>🏖️ रेत: <span id="retRate">रेट उपलब्ध नहीं</span></p>
+  
+
+
+    <a href="https://wa.me/917976747614">
+        <button>💬 आज का रेट पूछें</button>
+    </a>
+</div><script>
+    document.getElementById("bajriRate").innerText = "रेट WhatsApp पर पूछें";
+    document.getElementById("rodiRate").innerText = "रेट WhatsApp पर पूछें";
+    document.getElementById("retRate").innerText = "रेट WhatsApp पर पूछें";
+</script>
 </html>
