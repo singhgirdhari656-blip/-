@@ -1,0 +1,170 @@
+index.html<!DOCTYPE html><html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>श्री श्याम बिल्डिंग मैटेरियल सप्लायर्स</title><style>
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin: 0;
+        padding: 20px;
+        background: #f2f2f2;
+    }
+
+    .hero, .box {
+        background: white;
+        padding: 20px;
+        margin: 15px 0;
+        border-radius: 15px;
+    }
+
+    .hero h1 {
+        margin-top: 0;
+    }
+
+    .material {
+        background: #f2f2f2;
+        padding: 12px;
+        margin: 10px 0;
+        border-radius: 10px;
+    }
+
+    button {
+        padding: 14px 22px;
+        margin: 8px;
+        font-size: 17px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    input, select {
+        width: 90%;
+        padding: 12px;
+        margin: 8px;
+        font-size: 16px;
+        border-radius: 8px;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+    }
+
+    form button {
+        width: 90%;
+        margin-top: 10px;
+    }
+</style>
+
+</head><body><div class="hero">
+    <h1>श्री श्याम बिल्डिंग मैटेरियल सप्लायर्स</h1>
+    <p>🏗️ निर्माण सामग्री की विश्वसनीय सप्लाई</p>
+    <p>बजरी • रोड़ी • रेत</p>
+</div>
+
+<div class="box">
+    <h2>हमारे मैटेरियल</h2>
+
+    <div class="material">
+        <h3>🪨 बजरी</h3>
+        <p>अच्छी क्वालिटी की बजरी उपलब्ध</p>
+    </div>
+
+    <div class="material">
+        <h3>🪨 रोड़ी</h3>
+        <p>निर्माण कार्य के लिए रोड़ी उपलब्ध</p>
+    </div>
+
+    <div class="material">
+        <h3>🏖️ रेत</h3>
+        <p>निर्माण कार्य के लिए रेत उपलब्ध</p>
+    </div>
+</div>
+
+<div class="box">
+    <h2>🚚 जयपुर में सप्लाई</h2>
+    <p>हम जयपुर और आसपास के क्षेत्रों में बिल्डिंग मैटेरियल की सप्लाई करते हैं।</p>
+    <p>📍 Jaipur और आसपास के क्षेत्र</p>
+    <p>🚛 जरूरत के अनुसार डिलीवरी</p>
+</div>
+
+<div class="box">
+    <h2>⭐ हमसे क्यों खरीदें?</h2>
+
+    <div class="material">
+        <h3>🚚 जयपुर में सप्लाई</h3>
+        <p>जयपुर और आसपास के क्षेत्रों में मैटेरियल सप्लाई।</p>
+    </div>
+
+    <div class="material">
+        <h3>🏗️ अलग-अलग मैटेरियल</h3>
+        <p>बजरी, रोड़ी और रेत उपलब्ध।</p>
+    </div>
+
+    <div class="material">
+        <h3>📞 आसान संपर्क</h3>
+        <p>ऑर्डर और रेट की जानकारी के लिए सीधे संपर्क करें।</p>
+    </div>
+</div>
+
+<div class="box">
+    <h2>📋 ऑर्डर की जानकारी</h2>
+
+    <form onsubmit="sendOrder(); return false;">
+
+        <input type="text" id="name" placeholder="आपका नाम" required>
+
+        <input type="tel" id="phone" placeholder="मोबाइल नंबर" required>
+
+        <select id="material" required>
+            <option value="">मैटेरियल चुनें</option>
+            <option value="बजरी">बजरी</option>
+            <option value="रोड़ी">रोड़ी</option>
+            <option value="रेत">रेत</option>
+        </select>
+
+        <input type="text" id="quantity" placeholder="कितनी मात्रा चाहिए?">
+
+        <button type="submit">📲 WhatsApp पर ऑर्डर भेजें</button>
+
+    </form>
+</div>
+
+<div class="box">
+    <h2>📞 संपर्क करें</h2>
+
+    <a href="tel:7976747614">
+        <button>📞 Call Now</button>
+    </a>
+
+    <a href="https://wa.me/917976747614">
+        <button>💬 WhatsApp</button>
+    </a>
+
+    <br>
+
+    <a href="https://wa.me/917976747614">
+        <button>🚚 अभी ऑर्डर करें</button>
+    </a>
+</div>
+
+<script>
+    function sendOrder() {
+
+        let name = document.getElementById("name").value;
+        let phone = document.getElementById("phone").value;
+        let material = document.getElementById("material").value;
+        let quantity = document.getElementById("quantity").value;
+
+        let message =
+            "नमस्ते, मुझे बिल्डिंग मैटेरियल चाहिए.%0A" +
+            "नाम: " + encodeURIComponent(name) + "%0A" +
+            "मोबाइल: " + encodeURIComponent(phone) + "%0A" +
+            "मैटेरियल: " + encodeURIComponent(material) + "%0A" +
+            "मात्रा: " + encodeURIComponent(quantity);
+
+        window.location.href =
+            "https://wa.me/917976747614?text=" + message;
+    }
+</script>
+
+</body>
+</html>
